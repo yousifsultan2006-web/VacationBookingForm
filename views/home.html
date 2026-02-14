@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vacation Booking Form</title>
+    <!--Link to the JavaScript file and CSS file!-->
+    <script src="/js/script.js" defer></script>
+    <link rel="stylesheet" href="/styles/styles.css">
+    <link rel = "icon" href = "/Favicon.ico">
+
+</head>
+<body>
+    <main>
+        
+        <section class = "form-section">
+            <div class = "banner">
+                <img src="/imgs/images.jpeg" alt = "vacation Banner">
+                <h1>Book Your Dream Vacation!</h1>
+            </div>
+            <div class = "form-content">
+            <form id = "booking-form" action = "/submit-form" method = "POST">
+                <div class = "fields">
+                    <div class = "field">
+                <label for = "Destination">Destination:</label>
+                <span class = "error" id = "destination-error">Please select a destination.</span>
+                <select id = "Destination" name = "Destination">
+                    <option value="">Select a destination</option>
+                    <option value="Hawaii">Hawaii, United States</option>
+                    <option value="Paris">Paris, France</option>
+                    <option value="Tokyo">Tokyo, Japan</option>
+                    <option value="Sydney">Sydney</option>
+                    <option value="Rome">Rome, Italy</option>
+                </select></div>
+                <div class = "field">
+                <label for = "Departure-date">Departure Date:</label>
+                <span id = "departure-date-error" class = "error">Please select a departure date.</span>
+                <input type = "date" id = "departure-date" name = "Departure-date">
+                </div>
+                <div class = "field">
+                <label for = "NumberOfTravelers">Number of Travelers:</label>
+                <span id = "number-of-travelers-error" class = "error">Please enter a valid number of travelers (1 or more).</span>
+                <input type = "number" id = "number-of-travelers" name = "NumberOfTravelers">
+                
+                </div></div>
+                <button type = "submit" id = "book-button">Find My Vacation!</button>
+            </form>
+        </section>
+        
+    </main>
+    
+</body>
+</html>
