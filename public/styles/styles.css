@@ -27,7 +27,7 @@ select, input {
 .banner {
     position: relative;
     width: 100%;
-    border-radius: 20px;
+    border-radius: 0px;
     height: 300px;
     overflow: hidden;
 
