@@ -29,6 +29,6 @@ app.post(`/submit-form`, (req, res) => {
     res.sendFile(`${import.meta.dirname}/views/confirmation.html`);
 });
 
-app.listen(PORT, () => {
+app.listen(3001, "0.0.0.0", () => {
     console.log(`Server is running on http://localhost:${PORT}`);
 });
